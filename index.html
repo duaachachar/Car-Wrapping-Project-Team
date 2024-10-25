@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <title>Car Wrapping Website</title>
+</head>
+
+<body>
+    <!-- large screen  Navbar-->
+    <div style="background-color: #292929;" class="d-none d-sm-none d-lg-block">
+        <div class="container py-2">
+            <div class="row align-items-center text-center">
+                <!-- Left Section: Title -->
+                <div class="col-6 col-md-6 text-center text-md-start">
+                    <h1 class="text-white">Just <span class="text-danger fw-bold">Warp</span></h1>
+                </div>
+
+                <!-- Right Section: Button -->
+                <div class="col-6 col-md-6 text-center text-md-end">
+                    <button type="button" class="btn btn-danger fw-bold">Get Estimate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <header class="d-none d-sm-none d-lg-block">
+
+        <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #141414;">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse py-3" id="navbarNav">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 fw-bolder mx-3" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5 fw-bolder mx-3" href="./Pages/Categories/category.html">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5 fw-bolder mx-3" href="./Pages/Products/product.html">Wrap Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5 fw-bolder mx-3" href="./Pages/Services/service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5 fw-bolder mx-3" href="./Pages/About/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5 fw-bolder mx-3" href="./Pages/Contact/contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex">
+
+                        <div class="input-group my-3 my-lg-0 bg-secondary rounded-5" style="max-width: 300px;">
+                            <input type="text" class="form-control bg-transparent py-3 rounded-5 border-0"
+                                placeholder="Search">
+                            <button class="border-0 bg-transparent pe-4" type="button">
+                                <iconify-icon icon="weui:search-outlined" class="fs-2 text-white"></iconify-icon>
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- small screen Navbar-->
+    <nav class="navbar navbar-expand-lg position-sticky top-0 z-1 navbar-dark bg-dark d-md-block d-lg-none">
+        <div class="container">
+            <div class="d-flex justify-content-between w-100">
+                <!-- Toggle Button on Left Side for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Centered Text on Mobile -->
+                <h1 class="text-white text-center m-0">Just <span class="text-danger fw-bold">Wrap</span></h1>
+
+                <!-- Button on the Right Side -->
+                <button type="button" class="btn btn-danger fw-bold">Get Estimate</button>
+            </div>
+
+            <div class="collapse navbar-collapse mt-2" id="navbarNav">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 fw-bold" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold" href="./Pages/Categories/category.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold" href="./Pages/Products/product.html">Wrap Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold" href="./Pages/Services/service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold" href="./Pages/About/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold" href="./Pages/Contact/contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Search Form -->
+                <form class="d-flex">
+                    <div class="input-group my-3 my-lg-0 bg-secondary rounded-5" style="max-width: 300px;">
+                        <input type="text" class="form-control bg-transparent py-3 rounded-5 border-0"
+                            placeholder="Search">
+                        <button class="border-0 bg-transparent pe-4" type="button">
+                            <iconify-icon icon="weui:search-outlined" class="fs-2 text-white"></iconify-icon>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero section -->
+    <div style="background-color: #141414;">
+        <div class="container">
+            <div class="d-none d-sm-none d-md-block">
+                <div class="card text-bg-dark rounded-0 text-center ">
+                    <img src="./images/1st.png">
+                    <div class="card-img-overlay my-4">
+                        <h5 class="text-white my-3 pt-4">Drive with confidence</h5>
+                        <h1 class="text-white">Premium car <span class="text-danger fw-bold">Wrapping</span> <br> &
+                            Solutions
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-bg-dark rounded-0 text-center d-sm-block d-md-none">
+                <img src="./images/1st.png">
+                <div class="card-img-overlay">
+                    <h6 class="text-white my-3 pt-4">Drive with confidence</h6>
+                    <h3 class="text-white">Premium car <span class="text-danger fw-bold">Wrapping</span> <br> &
+                        Solutions
+                    </h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="container my-5 d-none d-sm-none d-md-block">
+            <div class="row">
+                <h2 class="text-center text-danger my-5">How It Works</h2>
+                <div class="col-lg-2 col-md-4 col-xs-12">
+                    <div class="text-center">
+                        <span class="border border-white rounded-circle text-white px-2 my-3">1</span>
+                    </div>
+                    <div class=" my-4 text-center">
+                        <img width="60px" class="" src="./images/1st-logo.png" alt="">
+                    </div>
+
+                    <h5 class=" text-light ms-2">Choose a Design </h5>
+                    <ul class="list-unstyled ms-2 text-light">
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Plain Design</li>
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Stock Design</li>
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Custom Design</li>
+                    </ul>
+                </div>
+                <div class="col-lg-1  d-none d-sm-none d-lg-block"></div>
+                <div class="col-lg-2 col-md-4 col-xs-12 ">
+                    <div class=" my-3 text-center">
+                        <span class="border border-light rounded-circle text-white py-1 px-2 my-3">2</span>
+                    </div>
+                    <div class=" my-3 text-center">
+                        <img width="60px" class="" src="./images/2nd-logo.png" alt="">
+                    </div>
+                    <h5 class=" text-light ms-2">Choose a Design </h5>
+                    <ul class="list-unstyled ms-2 text-light">
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Matte Finish</li>
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Glossy Finish</li>
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Mettalic Finish</li>
+                    </ul>
+                </div>
+                <div class="col-lg-1  d-none d-sm-none d-lg-block"></div>
+                <div class="col-lg-2 col-md-4 col-xs-12 ">
+                    <div class=" my-3 text-center">
+                        <span class="border border-white rounded-circle text-white p-1 px-2">3</span>
+                    </div>
+                    <div class=" my-3 text-center">
+                        <img width="60px" class="" src="./images/3rd-logo.png" alt="">
+                    </div>
+                    <h5 class=" text-light ms-2">Choose a Design </h5>
+                    <ul class="list-unstyled ms-2 text-light">
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Quality printing</li>
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Good Colors</li>
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Reasonable Cost</li>
+                    </ul>
+                </div>
+                <div class="col-lg-1  d-none d-sm-none d-lg-block"></div>
+                <div class="col-lg-3 d-none d-sm-none d-lg-block ">
+                    <div class=" my-3 text-center">
+                        <span class="border border-white rounded-circle text-white p-1 px-2 my-3">4</span>
+                    </div>
+                    <div class=" my-3 text-center">
+                        <img width="90px" class="" src="./images/4th-logo.png" alt="">
+                    </div>
+                    <h4 class=" text-light ms-5">Choose a Design </h4>
+                    <ul class="list-unstyled  text-light ms-5">
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Expert Team</li>
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Quick Procedure</li>
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> 100% Satisfaction
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- works with icon -->
+        <div class="container my-5  d-sm-block d-md-none">
+            <div class="row">
+                <h2 class="text-center text-danger my-5">How It Works</h2>
+                <div class=" col-12  text-center">
+                    <div class="text-center">
+                        <span class="border border-white rounded-circle text-white px-2 my-3">1</span>
+                    </div>
+                    <div class=" my-4 text-center">
+                        <img width="60px" class="" src="./images/1st-logo.png" alt="">
+                    </div>
+
+                    <h5 class=" text-light ms-2">Choose a Design </h5>
+                    <ul class="list-unstyled ms-2 text-light">
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Plain Design</li>
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Stock Design</li>
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Custom Design</li>
+                    </ul>
+                </div>
+
+                <div class=" col-12  text-center">
+                    <div class=" my-3 text-center">
+                        <span class="border border-light rounded-circle text-white py-1 px-2 my-3">2</span>
+                    </div>
+                    <div class=" my-3 text-center">
+                        <img width="60px" class="" src="./images/2nd-logo.png" alt="">
+                    </div>
+                    <h5 class=" text-light ms-2">Choose a Design </h5>
+                    <ul class="list-unstyled ms-2 text-light">
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Matte Finish</li>
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Glossy Finish</li>
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Mettalic Finish</li>
+                    </ul>
+                </div>
+
+                <div class=" col-12  text-center">
+                    <div class=" my-3 text-center">
+                        <span class="border border-white rounded-circle text-white p-1 px-2">3</span>
+                    </div>
+                    <div class=" my-3 text-center">
+                        <img width="60px" class="" src="./images/3rd-logo.png" alt="">
+                    </div>
+                    <h5 class=" text-light ms-2">Choose a Design </h5>
+                    <ul class="list-unstyled ms-2 text-light">
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Quality printing</li>
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Good Colors</li>
+                        <li><iconify-icon icon="material-symbols:check" noobserver></iconify-icon> Reasonable Cost</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- Car cards section -->
+        <div class="container my-4">
+            <div style="background-color: #292929;">
+                <div class="row">
+                    <div class="col-12 col-lg-5">
+                        <div class="d-none d-sm-none d-md-block">
+                            <img class="position-absolute z-1 mt-3 pt-5  car-img img-fluid" src="./images/2snd.png"
+                                alt="">
+                        </div>
+                        <div class=" d-sm-block d-md-none">
+                            <img class="position-absolute z-1 mt-3 pt-5 img-fluid w-75" src="./images/2snd.png" alt="">
+                        </div>
+                        <img class="position-relative  img-fluid" src="./images/1st-color.png" alt="">
+                    </div>
+                    <div class="col-lg-2 d-none d-sm-none d-lg-block"></div>
+
+                    <div class="col-lg-4 d-none d-sm-none d-lg-block text-white pt-5 ">
+                        <div class="d-flex  flex-column justify-content-center pt-5 ps-4">
+                            <h3 class="text-center pt-5">CAR WRAPS</h3>
+                            <p class="fw-normal lh-4">Protect your vehicle, preserve the value of your fleet while
+                                promoting your business with
+                                a
+                                full vehicle wrap. Faster and more cost effective than a paint job, you can easily
+                                remove or
+                                change the wrap with your next campaign.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-1 d-none d-sm-none d-xl-block"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cars cards section 2 -->
+
+        <div class="container my-4">
+            <div style="background-color: #292929;">
+                <div class="row">
+
+                    <div class="col-lg-4 d-none d-sm-none d-lg-block text-white pt-5 ps-3 ">
+                        <div class="d-flex  flex-column justify-content-center  ps-4">
+                            <h3 class=" pt-5">FOOD TRUCK WRAPS</h3>
+                            <p class="fw-normal lh-7">Investing in a full vehicle wrap for your food truck is a smart
+                                decision that offers numerous benefits. Unlike traditional paint jobs, vehicle wraps are
+                                faster and more cost-effective, making them an ideal choice for business owners looking
+                                to maximize their investment.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-none d-sm-none d-lg-block"></div>
+                    <div class="col-12 col-lg-5">
+                        <div class="d-none d-sm-none d-md-block">
+                            <img class=" z-1 img-fluid truck-img" src="./images/3rd.png" alt=""
+                                style="position: absolute;left: 770px; margin-top: 150px;">
+                        </div>
+                        <div class=" d-sm-block d-md-none">
+                            <img class="position-absolute z-1 mt-5  pt-5 img-fluid w-75" src="./images/3rd.png" alt="">
+                        </div>
+                        <img class="position-relative img-fluid" src="./images/2snd-color.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 4th section -->
+        <div class="container">
+            <section class="text-white py-5 px-2 rounded-5 " style="background-color: #292929;">
+                <div class="container">
+                    <!-- Title and Subtitle -->
+                    <div class="text-start mb-5 ">
+                        <h2 class="fw-bold">WHY CHOOSE US.</h2>
+                        <p class="lead">We are innovators with a passion for design, delivering premium car wrap
+                            services
+                            you
+                            won't find anywhere else.</p>
+                    </div>
+
+                    <!-- Services Grid -->
+                    <div class="row g-3">
+                        <!-- Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 shadow-sm text-white text-start p-4 rounded-4"
+                                style="background-color: #353535;">
+                                <h3 class="display-5 fw-bold">01</h3>
+                                <h5>Professional Team</h5>
+                                <p>Our skilled technicians use advanced techniques and top materials, ensuring flawless
+                                    results
+                                    and attention to detail.</p>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 shadow-sm text-white text-start p-4 rounded-4"
+                                style="background-color: #353535;">
+                                <h3 class="display-5 fw-bold">02</h3>
+                                <h5>Top Rated & Trusted</h5>
+                                <p>Our skilled technicians use advanced techniques and top materials, ensuring flawless
+                                    results
+                                    and attention to detail.</p>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 shadow-sm text-white text-start p-4 rounded-4"
+                                style="background-color: #353535;">
+                                <h3 class="display-5 fw-bold">03</h3>
+                                <h5>Laser Cut Installations</h5>
+                                <p>Our skilled technicians use advanced techniques and top materials, ensuring flawless
+                                    results
+                                    and attention to detail.</p>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 shadow-sm text-white text-start p-4 rounded-4"
+                                style="background-color: #353535;">
+                                <h3 class="display-5 fw-bold">04</h3>
+                                <h5>Affordable Pricing</h5>
+                                <p>Our skilled technicians use advanced techniques and top materials, ensuring flawless
+                                    results
+                                    and attention to detail.</p>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 shadow-sm text-white text-start p-4 rounded-4"
+                                style="background-color: #353535;">
+                                <h3 class="display-5 fw-bold">05</h3>
+                                <h5>Process That You Will Love</h5>
+                                <p>Our skilled technicians use advanced techniques and top materials, ensuring flawless
+                                    results
+                                    and attention to detail.</p>
+                            </div>
+                        </div>
+                        <!-- Contact Us Card -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 text-white text-start p-4 rounded-4"
+                                style="background-color: hwb(0 10% 24%);">
+                                <h3>CONTACT US.</h3>
+                                <p>Ready to transform your ride? Contact us now for stunning custom wraps and premium
+                                    protection!</p>
+                                <button type="button" class="w-50 btn btn-light fw-bolder mt-4">Talk To us</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- cards red and dark three cards -->
+        <div class="container text-center my-5">
+            <h1 style="color: white;">
+                SIMPLE,
+                <span class="fw-bolder" style="color: lightgray;">TRANSPARENT</span>
+                <span class="fw-bolder" style="color: red;">PRICING</span>
+            </h1>
+            <div class="mt-5 pt-5">
+                <span class="bg-white p-3 rounded-3 " style="color: #050505;"> <button
+                        class="btn btn-secondary me-3">Car wrap</button>Truck Wrap</span>
+                <p class="text-light mt-4">Enjoy high-quality services at competitive prices without compromising on
+                    <br> excellence.
+                </p>
+            </div>
+        </div>
+
+        <div class="container py-5 mt-5">
+            <div class="row text-start">
+                <!-- Silver Package Card -->
+
+
+                <!-- Silver Package Card -->
+                <div class="col-lg-4 col-md-6 mb-4 card-section">
+                    <div class="card p-4 rounded-4 shadow-sm  h-100" style="background-color: #353535;">
+                        <div class="d-flex align-items-center mb-3">
+                            <div>
+                                <img class="img-fluid  me-3 bg-white p-2 rounded-2" src="./images/Group 39896.png"
+                                    alt="">
+                            </div>
+                            <div>
+                                <h4 class="text-light mb-0">Partial Wrap</h4>
+                                <h2 class="mb-0 text-white">Silver Package</h2>
+                            </div>
+                        </div>
+                        <p class="text-light">Lorem ipsum dolor sit amet doloroli sitol conse ctetur adipiscing elit.
+                        </p>
+                        <div class="price mb-4">
+                            <h1 class="text-white">$99</h1>
+                            <h6 class="text-white">What's Included</h6>
+                        </div>
+                        <ul class="list-unstyled text-light">
+                            <li><iconify-icon class="rounded-circle text-center text-white fw-bolder fs-5 me-2"
+                                    icon="mdi:tick" style="background-color: hwb(0 10% 24%);"></iconify-icon>18” Hood &
+                                Fenders</li>
+                            <li><iconify-icon class="rounded-circle text-center text-white fw-bolder fs-5 me-2"
+                                    icon="mdi:tick" style="background-color: hwb(0 10% 24%);"></iconify-icon>Side View
+                                Mirrors/ or Headlights</li>
+                            <li><iconify-icon class="rounded-circle text-center text-white fw-bolder fs-5 me-2"
+                                    icon="mdi:tick" style="background-color: hwb(0 10% 24%);"></iconify-icon>4 Door Cups
+                            </li>
+                            <li><iconify-icon class="rounded-circle text-center text-white fw-bolder fs-5 me-2"
+                                    icon="mdi:tick" style="background-color: hwb(0 10% 24%);"></iconify-icon>Trunk
+                                Stripe</li>
+                            <li><iconify-icon class="rounded-circle text-center text-white fw-bolder fs-5 me-2"
+                                    icon="mdi:tick" style="background-color: hwb(0 10% 24%);"></iconify-icon>Full Front
+                                Bumper</li>
+                        </ul>
+                        <button class="btn btn-danger mt-3 rounded-5 py-3 fw-bolder"
+                            style="background-color: hwb(0 10% 24%);">Get Started</button>
+                    </div>
+                </div>
+
+                <!-- Platinum Package Card -->
+                <div class="col-lg-4 col-md-6 mb-4 card-section">
+                    <div class="card p-4 h-100 text-white rounded-4 shadow-sm"
+                        style="background-color: hwb(0 10% 24%);">
+                        <div class="d-flex align-items-center mb-3">
+                            <div>
+                                <img class="img-fluid  me-3 bg-white p-2 rounded-2" src="./images/Group 39520 (1).png"
+                                    alt="">
+                            </div>
+                            <div>
+                                <h4 class="text-light mb-0">Partial Wrap</h4>
+                                <h2 class="mb-0">Silver Package</h2>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet doloroli sitol conse ctetur adipiscing elit.</p>
+                        <div class="price mb-4">
+                            <h1>$199</h1>
+                            <h6>What's Included</h6>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><iconify-icon
+                                    class="rounded-circle bg-light text-center text-danger fw-bolder fs-5 me-2"
+                                    icon="mdi:tick"></iconify-icon>Full Front & Rear Bumper</li>
+                            <li><iconify-icon
+                                    class="rounded-circle bg-light text-center text-danger fw-bolder fs-5 me-2"
+                                    icon="mdi:tick"></iconify-icon>Full Hood, Roof & Trunk</li>
+                            <li><iconify-icon
+                                    class="rounded-circle bg-light text-center text-danger fw-bolder fs-5 me-2"
+                                    icon="mdi:tick"></iconify-icon>Full Driver & Passenger Side</li>
+                            <li><iconify-icon
+                                    class="rounded-circle bg-light text-center text-danger fw-bolder fs-5 me-2"
+                                    icon="mdi:tick"></iconify-icon>Side Mirrors & Headlights</li>
+                            <li><iconify-icon
+                                    class="rounded-circle bg-light text-center text-danger fw-bolder fs-5 me-2"
+                                    icon="mdi:tick"></iconify-icon>Full Quarter & Rocker Panels</li>
+                        </ul>
+                        <button class="btn btn-light mt-3 rounded-5 py-3 fw-bolder">Get Started</button>
+                    </div>
+                </div>
+
+                <!-- Gold Package Card -->
+
+                <div class="col-lg-4 col-md-6 mb-4 card-section">
+                    <div class="card p-4 h-100 rounded-4 shadow-sm text-black " style="background-color: #353535;">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="">
+                                <img class="img-fluid me-3 bg-white p-2 rounded-2" src="./images/Group 39506.png"
+                                    alt="">
+                            </div>
+                            <div>
+                                <h4 class="text-light mb-0">Partial Wrap</h4>
+                                <h2 class="mb-0 text-white">Silver Package</h2>
+                            </div>
+                        </div>
+                        <p class="text-light">Lorem ipsum dolor sit amet doloroli sitol conse ctetur adipiscing elit.
+                        </p>
+                        <div class="price mb-4">
+                            <h1 class="text-white">$399</h1>
+                            <h6 class="text-white">What's Included</h6>
+                        </div>
+                        <ul class="list-unstyled text-light">
+                            <li><iconify-icon class="rounded-circle  text-center text-white fw-bolder fs-5 me-2"
+                                    icon="mdi:tick" style="background-color: hwb(0 10% 24%);"></iconify-icon>18” Hood &
+                                Fenders</li>
+                            <li><iconify-icon class="rounded-circle  text-center text-white fw-bolder fs-5 me-2"
+                                    icon="mdi:tick" style="background-color: hwb(0 10% 24%);"></iconify-icon>Side View
+                                Mirrors/ or Headlights</li>
+                            <li><iconify-icon class="rounded-circle  text-center text-white fw-bolder fs-5 me-2"
+                                    icon="mdi:tick" style="background-color: hwb(0 10% 24%);"></iconify-icon>4 Door Cups
+                            </li>
+                            <li><iconify-icon class="rounded-circle  text-center text-white fw-bolder fs-5 me-2"
+                                    icon="mdi:tick" style="background-color: hwb(0 10% 24%);"></iconify-icon>Trunk
+                                Stripe</li>
+                            <li><iconify-icon class="rounded-circle  text-center text-white fw-bolder fs-5 me-2"
+                                    icon="mdi:tick" style="background-color: hwb(0 10% 24%);"></iconify-icon>Full Front
+                                Bumper</li>
+                        </ul>
+                        <button class="btn btn-danger mt-3 rounded-5 py-3 fw-bolder"
+                            style="background-color: hwb(0 10% 24%);">Get Started</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <!-- Cars image -->
+        <div class="container">
+            <img class="img-fluid" src="./images/Background (1).png" alt="">
+        </div>
+
+        <!-- Easy section -->
+        <div class="container text-center py-5 text-white">
+            <h1 class="fw-bold">HOW WE MAKE THIS EASY?</h1>
+            <p>Whether you’re looking to give your ride an eye-catching new look with a full vehicle wrap or just want
+                to <br>
+                add some flair with a partial car wrap, our team can help you find the perfect solution for your
+                vehicle.
+            </p>
+
+            <div class="row mt-5">
+                <div class="col-lg-3 col-sm-6 col-xs-6 text-center">
+                    <img width="40" src="./images/award-appliance (1).svg" class="my-2" alt="">
+                    <h5>Request an Estimate</h5>
+                    <p>Start with a simple phone call, email or conversation.</p>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-xs-6 text-center">
+                    <img width="40" src="./images/award-appliance (1).svg" class="my-2" alt="">
+                    <h5>Gather More Information</h5>
+                    <p>Our office will reach out to get a better understanding of your project needs in terms of design,
+                        project size and timeline.</p>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-xs-6 text-center">
+                    <img width="40" src="./images/award-appliance (1).svg" class="my-2" alt="">
+                    <h5>We Create a Precise Quote</h5>
+                    <p>We’ll take the time to create a fantastic scope of work according to your budget.</p>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-xs-6 text-center">
+                    <img width="40" src="./images/award-appliance (1).svg" alt="">
+                    <h5>Print and Install</h5>
+                    <p>Our veteran installation team will help your automobile look fantastic with the wrap that you
+                        will
+                        love to drive.</p>
+                </div>
+            </div>
+
+            <a class="btn btn-danger mt-4">Request an Estimate Now</a>
+        </div>
+
+        <!-- Cars and cards -->
+
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-xs-12 text-center">
+                    <img class="img-fluid card-section" src="./images/Rectangle 4468.png" alt="">
+                </div>
+                <div class="col-lg-6 col-md-12 col-xs-12 mt-4">
+                    <div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <h1 class="text-white"><span class="text-danger fw-bold">Car</span> Wraps</h1>
+                            <img class="img-fluid" src="./images/down-right-arrow 1.png" alt="">
+                        </div>
+                        <p class="text-white">Custom car wraps and & vehicle graphics that looks better than
+                            paint.Custom car wraps and &
+                            vehicle graphics that looks better than paint.</p>
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-between">
+                            <h1 class="text-white"><span class="text-danger fw-bold">Truck</span> Wraps</h1>
+                            <img class="img-fluid" src="./images/down-right-arrow 2.png" alt="">
+                        </div>
+                        <p class="text-white">Custom car wraps and & vehicle graphics that looks better than
+                            paint.Custom car wraps and &
+                            vehicle graphics that looks better than paint.</p>
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-between">
+                            <h1 class="text-white"><span class="text-danger fw-bold">Paint</span> shields</h1>
+                            <img class="img-fluid" src="./images/down-right-arrow 2.png" alt="">
+                        </div>
+                        <p class="text-white">Custom car wraps and & vehicle graphics that looks better than
+                            paint.Custom car wraps and &
+                            vehicle graphics that looks better than paint.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Customers  cards -->
+
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="bg-white rounded-4 p-4">
+                        <div class="d-flex align-items-center">
+                            <img src="./images/Medal.png" alt="">
+                            <h4 class="mt-2">OUR HAPPY CUSTOMERS</h4>
+                        </div>
+                        <img class="img-fluid" src="./images/avatars.png" alt="">
+                        <div class="text-dark">
+                            <span class="text-secondary fw-medium">We are committed to delivering the same high-quality
+                                of
+                                service that we have provided to so
+                                many clients throughout the years. See our outstanding reviews on Google.</span>
+                        </div>
+                        <div class="d-flex ">
+                            <h4 class="me-3">Join Our List of Happy Customers</h4>
+                            <img src="./images/arrow-right.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="bg-white rounded-4 p-3">
+                      
+                        <p class="fw-medium text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div>
+                            <span class="fw-medium text-secondary">I would recommend them to friends and family without
+                                hesitation.</span>
+                        </div>
+                        <div class="py-3">
+                            <span class="fw-medium text-secondary">Sherri M.</span>
+                        </div>
+                        <div class="text-center">
+                            <img  src="./images/Group 39830.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Footer section -->
+    <footer class="bg-black py-5 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h2 class="text-danger fw-bold my-4">Gallery</h2>
+
+                    <div class="row row-cols-1 row-cols-sm-2 py-5  row-cols-md-3  border-bottom  border-top border-5">
+                        <div class="col">
+                            <img src="./images/Rectangle 4475.png" class="img-fluid rounded"
+                                alt="Person applying a blue car wrap on a vehicle">
+                        </div>
+                        <div class="col">
+                            <img src="./images/Rectangle 4473.png" class="img-fluid rounded"
+                                alt="Red sports car parked in a showroom">
+                        </div>
+                        <div class="col">
+                            <img src="./images/Rectangle 4476.png" class="img-fluid rounded"
+                                alt="Red sports car parked on a street">
+                        </div>
+                        <div class="col">
+                            <img src="./images/Rectangle 4475 (1).png" class="img-fluid rounded"
+                                alt="Person applying a blue car wrap on a vehicle">
+                        </div>
+                        <div class="col">
+                            <img src="./images/Rectangle 4473 (1).png" class="img-fluid rounded"
+                                alt="Red sports car parked in a showroom">
+                        </div>
+                        <div class="col">
+                            <img src="./images/Rectangle 4476 (1).png" class="img-fluid rounded"
+                                alt="Red sports car parked on a street">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 text-center px-5">
+                    <h2 class="text-danger fw-bold my-4">Contact Us</h2>
+                    <div class="border-top border-5 py-4">
+                        <div class="d-flex text-white fs-5 py-2">
+                            <iconify-icon icon="wpf:message" class="pt-1 pe-2"></iconify-icon>
+                            <p class="fw-semibold ">123-456-7890</p>
+                        </div>
+                        <div class="d-flex text-white  fs-5 py-1">
+                            <iconify-icon icon="mingcute:phone-call-fill" class="pt-1 pe-2"></iconify-icon>
+                            <p class="fw-semibold">info@justwrap.ca</p>
+                        </div>
+                        <div class="d-flex text-white text-start py-3 fs-5">
+                            <iconify-icon icon="subway:location-3" class="pt-1 pe-2"></iconify-icon>
+                            <span>2181 Premier Way Unit 176 Sherwood Park, AB T8H 2V1</span>
+                        </div>
+                        <div class="d-flex text-white  text-start py-2 fs-5">
+                            <iconify-icon icon="ri:time-line" class="pt-1 pe-2"></iconify-icon>
+                            <p class="fw-semibold">Mon – Thu: 9am – 7pm Fri – Sat: 9am – 5pm</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-md-4 text-center px-5">
+                    <h2 class="text-danger fw-bold my-4">Services</h2>
+                    <div class="border-top border-5 py-4 text-white text-start">
+                        <p class="fw-semibold fs-4">Partial Wraps</p>
+                        <p class="fw-semibold fs-4">Full Wraps</p>
+                        <p class="fw-semibold fs-4">Car Wraps</p>
+                        <p class="fw-semibold fs-4">Food Truck Wraps</p>
+                        <p class="fw-semibold fs-4">Paint Protection Films</p>
+                        <p class="fw-semibold fs-4">Follow US</p>
+                        <div class="d-flex gap-3">
+                            <iconify-icon
+                                class="text-white bg-danger border border-2 p-2 rounded-circle border-danger fs-3"
+                                icon="line-md:instagram"></iconify-icon>
+                            <iconify-icon
+                                class="text-white bg-danger border border-2 p-2 rounded-circle border-danger fs-3"
+                                icon="ri:twitter-x-line"></iconify-icon>
+                            <iconify-icon
+                                class="text-white bg-danger border border-2 p-2 rounded-circle border-danger fs-3"
+                                icon="ic:baseline-facebook"></iconify-icon>
+                            <iconify-icon
+                                class="text-white bg-danger border border-2 p-2 rounded-circle border-danger fs-3"
+                                icon="ic:baseline-whatsapp"></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+    <div class="bg-danger">
+        <div class="container">
+            <div class="py-3 row text-white justify-content-between align-items-center">
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2024 Just Wrap. All rights reserved.</p>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <p class="mb-0">Developed with 🤍 by extenjen</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

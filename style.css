@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.input::placeholder {
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 20px;
+    opacity: 1;
+}
+.truck-img{
+    animation: hero-img 6s ease 0s infinite normal none;
+}
+.car-img{
+    animation: hero-img 6s ease 0s infinite normal none;
+}
+.card-section{
+    animation: cards 6s ease 0s infinite normal none;
+}
+
+/* Animation */
+@keyframes hero-img {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateX(-48px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateX(-26px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateX(-13px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateX(-6.5px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateX(-4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+      animation-timing-function: ease-out;
+      transform: translateX(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+/* cards animation */
+  @keyframes cards {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateY(-45px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(-24px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateY(-12px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateY(-6px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateY(-4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
