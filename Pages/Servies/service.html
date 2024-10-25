@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Servies/service.css">
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+    <title>Car Wrapping Website</title>
+</head>
+
+<body>
+    <!-- large screen  Navbar-->
+    <div style="background-color: #292929;" class="d-none d-sm-none d-lg-block">
+        <div class="container py-2">
+            <div class="row align-items-center text-center">
+                <!-- Left Section: Title -->
+                <div class="col-6 col-md-6 text-center text-md-start">
+                    <h1 class="text-white">Just <span class="text-danger fw-bold">Warp</span></h1>
+                </div>
+
+                <!-- Right Section: Button -->
+                <div class="col-6 col-md-6 text-center text-md-end">
+                    <button type="button" class="btn btn-danger fw-bold">Get Estimate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <header class="d-none d-sm-none d-lg-block">
+
+        <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #141414;">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse py-3" id="navbarNav">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 fw-bolder mx-3" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5 fw-bolder mx-3" href="../Categories/category.html">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5 fw-bolder mx-3" href="../Products/product.html">Wrap Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5 fw-bolder mx-3" href="../Services/service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5 fw-bolder mx-3" href="../About/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fs-5 fw-bolder mx-3" href="../Contact/contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex">
+
+                        <div class="input-group my-3 my-lg-0 bg-secondary rounded-5" style="max-width: 300px;">
+                            <input type="text" class="form-control bg-transparent py-3 rounded-5 border-0"
+                                placeholder="Search">
+                            <button class="border-0 bg-transparent pe-4" type="button">
+                                <iconify-icon icon="weui:search-outlined" class="fs-2 text-white"></iconify-icon>
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- small screen Navbar-->
+    <nav class="navbar navbar-expand-lg position-sticky top-0 z-1 navbar-dark bg-dark d-md-block d-lg-none">
+        <div class="container">
+            <div class="d-flex justify-content-between w-100">
+                <!-- Toggle Button on Left Side for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Centered Text on Mobile -->
+                <h1 class="text-white text-center m-0">Just <span class="text-danger fw-bold">Wrap</span></h1>
+
+                <!-- Button on the Right Side -->
+                <button type="button" class="btn btn-danger fw-bold">Get Estimate</button>
+            </div>
+
+            <div class="collapse navbar-collapse mt-2" id="navbarNav">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 fw-bold" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold" href="../Categories/category.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold" href="../Products/product.html">Wrap Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold" href="../Services/service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold" href="../About/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold" href="../Contact/contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Search Form -->
+                <form class="d-flex">
+                    <div class="input-group my-3 my-lg-0 bg-secondary rounded-5" style="max-width: 300px;">
+                        <input type="text" class="form-control bg-transparent py-3 rounded-5 border-0"
+                            placeholder="Search">
+                        <button class="border-0 bg-transparent pe-4" type="button">
+                            <iconify-icon icon="weui:search-outlined" class="fs-2 text-white"></iconify-icon>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Hero Section -->
+     <div class="card text-bg-dark rounded-0">
+        <img src="../../images/Untitled design (12).png">
+        <div class="card-img-overlay">
+            <p class="card-text fw-bold text-center fs-4">We provide all kind of wrap services, car wraps, food <br>
+                truck wraps and paint protective film.</p>
+        </div>
+    </div>
+
+
+    <!-- Our Services Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4 text-white">Our Services</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="d-block d-md-none d-lg-block">
+                <div class="card text-center bg-dark text-white shadow-lg" style="min-height: 450px;">
+                    <img src="../../images/Yellow_car.png" class="card-img-top img-fluid p-3 my-3 rounded-3"
+                        alt="Car Wraps" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-start">
+                        <h5 class="card-title">Car Wraps</h5>
+                        <p class="card-text mt-5" style="line-height: 2;">We offer high-quality car wraps to give your vehicle a fresh look. Choose
+                            from different styles like matte, gloss, or custom designs. Our wraps protect your car's
+                            paint from scratches and sun damage while making it look amazing.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="card h-100 text-center bg-dark text-white shadow-lg" style="min-height: 450px;">
+                    <img src="../../images/3rd.png" class="card-img-top my-3 img-fluid p-3 rounded-3"
+                        alt="Food Truck Wraps" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-start">
+                        <h5 class="card-title">Food Truck Wraps</h5>
+                        <p class="card-text mt-5" style="line-height: 2;">Get your food truck noticed with our eye-catching wraps. We create custom
+                            designs that match your brand and help you attract more customers. Our wraps are tough and
+                            made to last in all weather conditions.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="card h-100 text-center bg-dark text-white shadow-lg" style="min-height: 450px;">
+                    <img src="../../images/Wrap_Roll.png" class="card-img-top my-3 img-fluid p-3 rounded-3 "
+                        alt="Paint Protection Film" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-start">
+                        <h5 class="card-title">Paint Protection Film PPF</h5>
+                        <p class="card-text mt-5" style="line-height: 2;">Protect your car's paint with our clear Paint Protection Film. It shields
+                            your vehicle from scratches, chips, and damage while keeping it looking new. Perfect for
+                            areas like the hood and bumper, this invisible film offers strong, lasting protection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- How We Work Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-5">How We Work</h2>
+    <div class="row justify-content-center g-4">
+        <div class="col-lg-4 col-md-6">
+            <div class="text-center">
+                <img src="../../images/2nd-logo.png" alt="Icon representing guided strategy">
+                <h5 class="mt-5 text-center">Guided Strategy</h5>
+                <p class="mt-4 text-center">We start by understanding your <br> brand, goals, and needs. Our team <br> develops unique wrap concepts and <br> graphics that align with your vision.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="text-center">
+                <img src="../../images/3rd-logo.png" alt="Artwork Icon">
+                <h5 class="mt-5 text-center">Artwork Creation</h5>
+                <p class="mt-5 text-center ms-5">Our designers turn your brand's <br> goals into nearly complete custom <br> graphics, ready for your approval.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="text-center">
+                <img src="../../images/1st-logo.png" alt="Graphics Icon">
+                <h5 class="mt-5 text-center">Final Graphics</h5>
+                <p class="mt-5 text-center ms-5">Once approved, we ensure the <br> artwork fits your vehicle perfectly, <br> adjusting for precise <br> measurements and scale.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+      <!-- footer -->
+     <footer class="bg-black py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h2 class="text-danger fw-bold my-4">Gallery</h2>
+
+                    <div class="row row-cols-1 row-cols-sm-2 py-5  row-cols-md-3  border-bottom  border-top border-5">
+                        <div class="col">
+                            <img src="../../images/Rectangle 4475.png" class="img-fluid rounded"
+                                alt="">
+                        </div>
+                        <div class="col">
+                            <img src="../../images/Rectangle 4473.png" class="img-fluid rounded"
+                                alt="">
+                        </div>
+                        <div class="col">
+                            <img src="../../images/Rectangle 4476.png" class="img-fluid rounded"
+                                alt="">
+                        </div>
+                        <div class="col">
+                            <img src="../../images/Rectangle 4475 (1).png" class="img-fluid rounded"
+                                alt="">
+                        </div>
+                        <div class="col">
+                            <img src="../../images/Rectangle 4473 (1).png" class="img-fluid rounded"
+                                alt="">
+                        </div>
+                        <div class="col">
+                            <img src="../../images/Rectangle 4476 (1).png" class="img-fluid rounded"
+                                alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 text-center px-5">
+                    <h2 class="text-danger fw-bold my-4">Contact Us</h2>
+                    <div class="border-top border-5 py-4">
+                        <div class="d-flex text-white fs-5 py-2">
+                            <iconify-icon icon="wpf:message" class="pt-1 pe-2"></iconify-icon>
+                            <p class="fw-semibold ">123-456-7890</p>
+                        </div>
+                        <div class="d-flex text-white  fs-5 py-1">
+                            <iconify-icon icon="mingcute:phone-call-fill" class="pt-1 pe-2"></iconify-icon>
+                            <p class="fw-semibold">info@justwrap.ca</p>
+                        </div>
+                        <div class="d-flex text-white text-start py-3 fs-5">
+                            <iconify-icon icon="subway:location-3" class="pt-1 pe-2"></iconify-icon>
+                            <span>2181 Premier Way Unit 176 Sherwood Park, AB T8H 2V1</span>
+                        </div>
+                        <div class="d-flex text-white  text-start py-2 fs-5">
+                            <iconify-icon icon="ri:time-line" class="pt-1 pe-2"></iconify-icon>
+                            <p class="fw-semibold">Mon – Thu: 9am – 7pmFri – Sat: 9am – 5pm</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-md-4 text-center px-5">
+                    <h2 class="text-danger fw-bold my-4">Services</h2>
+                    <div class="border-top border-5 py-4 text-white text-start">
+                        <p class="fw-semibold fs-4">Partial Wraps</p>
+                        <p class="fw-semibold fs-4">Full Wraps</p>
+                        <p class="fw-semibold fs-4">Car Wraps</p>
+                        <p class="fw-semibold fs-4">Food Truck Wraps</p>
+                        <p class="fw-semibold fs-4">Paint Protection Films</p>
+                        <p class="fw-semibold fs-4">Follow US</p>
+                        <div class="d-flex gap-3">
+                            <iconify-icon
+                                class="text-white bg-danger border border-2 p-2 rounded-circle border-danger fs-3"
+                                icon="line-md:instagram"></iconify-icon>
+                            <iconify-icon
+                                class="text-white bg-danger border border-2 p-2 rounded-circle border-danger fs-3"
+                                icon="ri:twitter-x-line"></iconify-icon>
+                            <iconify-icon
+                                class="text-white bg-danger border border-2 p-2 rounded-circle border-danger fs-3"
+                                icon="ic:baseline-facebook"></iconify-icon>
+                            <iconify-icon
+                                class="text-white bg-danger border border-2 p-2 rounded-circle border-danger fs-3"
+                                icon="ic:baseline-whatsapp"></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </footer>
+    <div class="bg-danger">
+        <div class="container">
+            <div class="py-3 row text-white justify-content-between align-items-center">
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2024 Just Wrap. All rights reserved.</p>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <p class="mb-0">Developed with 🤍 by extenjen</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
