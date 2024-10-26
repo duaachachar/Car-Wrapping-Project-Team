@@ -23,25 +23,6 @@
 }
 
 
-
-
-
-
-
-.question button{
-    width: 100%;
-    background-color: #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 15px;
-    border:none;
-    outline: none;
-    font-size: 22px;
-    color: #fff;
-    font-weight: 700;
-    cursor: pointer;
-}
 .question p{
     font-size: 22px;
     max-height: 0;
