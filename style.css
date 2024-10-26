@@ -21,6 +21,28 @@
     animation: cards 6s ease 0s infinite normal none;
 }
 
+.question p{
+  font-size: 22px;
+  max-height: 0;
+  opacity: 0;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: all 0.6s ease;
+}
+.d-arrow{
+  transition: transform 0.5s ease-in ;
+  color: #fff;
+}
+.question p.show{
+  max-height: 200px; 
+  opacity: 1;
+  padding:0px 15px 30px 15px;
+}
+.question button .d-arrow.rotate{
+  transform: rotate(180deg);
+}
+
+
 /* Animation */
 @keyframes hero-img {
     0% {
