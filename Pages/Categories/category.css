@@ -4,18 +4,7 @@ body {
 .input-group input::placeholder {
     color: #ffffff;
 }
-
-        /* Custom button styling */
-.btn-custom {
-    font-size: 0.9rem;
-    font-weight: bold;
-    padding: 0.5rem 0;
-    border-radius: 5px;
-    color: #fff;
-    width: 100%; /* Full width for equal columns */
-    text-transform: uppercase;
-    background-color: #f44336;
-        }
+    
 
                 /* Custom styling for the cards */
 .card-custom {
