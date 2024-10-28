@@ -4,16 +4,8 @@
     font-family: "Poppins", sans-serif;
 }
 
-.inputs input::placeholder {
-    font-weight: 600;
-    color: #ffffff;
-    font-size: 20px;
-    opacity: 1;
-}
-.inputcontact input::placeholder {
-    font-weight: 500;
-
-    color: #afabab;
-    font-size: 13px;
-    opacity: 1;
-}
+form .form-control {
+    color: white !important; 
+    border-color: white; 
+  }
+  

@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./contact.css">
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
     <title>Car Wrapping Website</title>
 </head>
@@ -55,7 +55,7 @@
                             <a class="nav-link  fs-5 fw-bolder mx-3" href="../Products/product.html">Wrap Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  fs-5 fw-bolder mx-3" href="../Services/service.html">Services</a>
+                            <a class="nav-link  fs-5 fw-bolder mx-3" href="../Servies/service.html">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link  fs-5 fw-bolder mx-3" href="../About/about.html">About</a>
@@ -111,7 +111,7 @@
                         <a class="nav-link fs-5 fw-bold" href="../Products/product.html">Wrap Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5 fw-bold" href="../Services/service.html">Services</a>
+                        <a class="nav-link fs-5 fw-bold" href="../Servies/service.html">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fs-5 fw-bold" href="../About/about.html">About</a>
@@ -139,9 +139,9 @@
         <!-- contact -->
         <div style="background-color:#292929;" class="pb-5 text-light">
             <div class="container d-flex flex-column align-items-center py-5">
-                <div style="background: #353535;" class=" p-4 shadow-lg" style="max-width: 500px;">
+                <div style="background: #353535; " class=" p-4 shadow-lg w-50" style="max-width: 300px;">
                     <h1 class="text-center display-3 fw-medium mb-4">Contact us</h1>
-                    <form>
+                    <!-- <form id="userForm">
                         <h4 class="fw-medium pb-4">Contact</h4>
                         <div class="mb-3 inputcontact">
                             <label for="name" class="form-label">Your Name</label>
@@ -171,7 +171,72 @@
                         <button  style="background-color: #9E0517;" type="submit" class="btn text-white w-100 py-2">SEND MESSAGE</button>
                         <button type="button" class="btn border-danger  text-white w-100 py-2 mt-2">Want to learn
                             more</button>
-                    </form>
+                    </form> -->
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-12">
+                          <label for="validationCustom01" class="form-label">Your name</label>
+                          <input type="text" class="form-control  bg-transparent py-2" id="validationCustom01"  placeholder="Enter your name"  required >
+                          <div class="invalid-feedback">
+                        Please Enter Your name
+                           </div>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <label for="validationCustom02" class="form-label">Your Phone number</label>
+                          <input type="number" class="form-control bg-transparent py-2"  id="validationCustom02" placeholder="Enter your phone nmb" required >
+                          <div class="invalid-feedback">
+                            Please enter phone number
+                           </div>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <label for="validationCustomUsername" class="form-label">Email address</label>
+                          <div class="input-group has-validation">
+                            <input type="email" class="form-control  bg-transparent py-2" id="validationCustomUsername" placeholder="Please enter a email" aria-describedby="inputGroupPrepend" required >
+                            <div class="invalid-feedback">
+                              Please choose a email.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <label for="validationCustom03" class="form-label">Number Of Persons</label>
+                          <input type="number" class="form-control  bg-transparent py-2" id="validationCustom03" placeholder="type here" required >
+                          <div class="invalid-feedback">
+                            Please provide a number of person.
+                          </div>
+                        </div>
+                        
+                        <div class="col-12">
+                          <label for="validationCustom05" class="form-label">Your Requirement /Queries</label>
+                          <input type="text" class="form-control  bg-transparent py-2" id="validationCustom05" placeholder="Type your full name" required >
+                          <div class="invalid-feedback">
+                           Any Queries / Requirements
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                              Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                              You must agree before submitting.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 ">
+                          <button class="btn btn-danger w-100 py-1" type="submit">Send me</button>
+                        </div>
+                        <div class="col-12 ">
+                            <button type="button" class="btn btn-outline-danger w-100">Want to learn more</button>
+                          </div>
+                      </form>
+                   
+                    
                     <div class="mt-4  text-start">
                         <p class="fw-lighter">Contact our experts to learn more about the advantage of vehicle marketing</p>
                         <div class="d-flex gap-3"><strong>Address:</strong>
@@ -187,8 +252,8 @@
                 </div>
             </div>
         </div>
-        <!-- footer -->
-        <footer style="background-color: #181717;" class="py-5">
+         <!-- footer -->
+         <footer style="background-color: #181717;" class="py-5">
             <div class="container">
                 <div class="row">
                     <!-- Gallery Section -->
@@ -260,7 +325,8 @@
                 </div>
             </div>
         </footer>
-        <div style="background-color: #9E0517;">
+        
+        <div style="   background-color: #9E0517;">
             <div class="container">
                 <div class="py-3 row text-white justify-content-between align-items-center">
                     <div class="col-12 col-md-6 text-center text-md-start">
@@ -272,6 +338,8 @@
                 </div>
             </div>
         </div>
+
+        <script src="./contact.js"></script>
 </body>
 
 </html>
