@@ -3,3 +3,8 @@
 *{
     font-family: "Poppins", sans-serif;
 }
+
+  .car-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(248, 2, 2, 0.3);
+  }
