@@ -1,35 +1,36 @@
 body {
-    background-color: #1c1c1c; /* Dark background for the whole page */
+  background-color: #1c1c1c; /* Dark background for the whole page */
 }
 .input-group input::placeholder {
-    color: #ffffff;
+  color: #ffffff;
 }
-    
 
-                /* Custom styling for the cards */
+/* Custom styling for the cards */
 .card-custom {
-        border: 1px solid #373737;
-        border-radius: 22px;
-        text-align: center; 
-        margin-top: 20px;
-        background-color: #373737;
-                }
-               
+  border: 1px solid #373737;
+  border-radius: 22px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #373737;
+}
+
 .card-custom p {
-        color: #fff;
-        font-size: 0.9rem;
-        margin-top: 10px; 
-                }
-        
-                .card-custom {
-                    width: 100%;
-                    height: 100%;
-                    text-align: center;
-                  
-                }
-                
-                .card-custom img {
-                    width: 100%;
-                    height: 200px; /* تصویر کی اونچائی */
-                }
-        
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.card-custom {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.card-custom img {
+  width: 100%;
+  height: 200px; /* تصویر کی اونچائی */
+}
+.card-custom span {
+  text-decoration: line-through;
+  color: #888;
+}
