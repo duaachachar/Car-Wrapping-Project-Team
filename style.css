@@ -4,6 +4,9 @@
     font-weight: 100;
     font-style: normal;
 }
+input::placeholder{
+  color: #E3E3E3 !important; 
+}
 
 .input::placeholder {
     font-weight: 600;

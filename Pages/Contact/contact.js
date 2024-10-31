@@ -19,6 +19,7 @@
         } else if (name && phoneNum && email && personNum && queries) {
           event.preventDefault(); 
           window.location.href = "/index.html"; 
+          alert("Login Successfully")
         }
 
         form.classList.add('was-validated');

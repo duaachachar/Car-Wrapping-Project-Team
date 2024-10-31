@@ -4,6 +4,9 @@
     font-family: "Poppins", sans-serif;
 }
 
+input::placeholder{
+  color: #E3E3E3 !important; 
+}
   .car-card:hover {
     transform: scale(1.05);
     box-shadow: 0px 8px 16px rgba(248, 2, 2, 0.3);
