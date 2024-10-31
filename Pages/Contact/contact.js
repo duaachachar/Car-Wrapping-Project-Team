@@ -18,7 +18,7 @@
           event.stopPropagation();
         } else if (name && phoneNum && email && personNum && queries) {
           event.preventDefault(); 
-          window.location.href = "/index.html"; 
+          window.location.href = "../../index.html"; 
           alert("Login Successfully")
         }
 
