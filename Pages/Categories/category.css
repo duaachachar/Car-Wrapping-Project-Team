@@ -1,44 +1,35 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     font-family: "Poppins", sans-serif;
 }
-
 body {
-    background-color: #1c1c1c; /* Dark background for the whole page */
+    background-color: #1c1c1c;
+  
 }
 .input-group input::placeholder {
     color: #ffffff;
 }
-
-        /* Custom button styling */
 .btn-custom {
     font-size: 0.9rem;
     font-weight: bold;
     padding: 0.5rem 0;
     border-radius: 5px;
     color: #fff;
-    width: 100%; /* Full width for equal columns */
-    text-transform: uppercase;
+    width: 100%;
+   text-transform: uppercase;
     background-color: #f44336;
-        }
-
-                /* Custom styling for the cards */
+}
 .card-custom {
-        border: 1px solid #373737;
-        border-radius: 22px;
-        text-align: center; 
-        margin-top: 20px;
-        background-color: #373737;
-                }
-               
+    border: 1px solid #373737;
+    border-radius: 22px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #373737;
+   
+}
 .card-custom p {
-        color: #fff;
-        font-size: 0.9rem;
-        margin-top: 10px; 
-                }
-        
-    
-
-        
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
